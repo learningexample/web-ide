@@ -8,7 +8,7 @@ if docker ps -a | grep code-server > /dev/null; then
   echo "Found code-server container, stopping it..."
   
   # Stop the container using Docker Compose
-  docker compose -f vsc-web-docker-compose.yml down
+  docker compose -f webide-docker-compose.yml down
   
   echo "VS Code web server has been stopped."
 else

@@ -19,18 +19,17 @@ This project provides a ready-to-use web-based VS Code development environment t
 ```
 web-ide/
 ├── README.md                         # This documentation
-├── web-ide-Dockerfile.custom-vscode  # Custom Docker image configuration
-├── web-ide-vsc-web-docker-compose.yml # Docker Compose configuration
+├── webide-Dockerfile.custom          # Custom Docker image configuration
+├── webide-docker-compose.yml         # Docker Compose configuration
 ├── code-server-data/                 # Persistent data directory
 │   └── config/                       # VS Code configuration files
-├── web-ide-run-vscode-server.bat     # Windows script to start the server
-├── web-ide-run-vscode-server.sh      # Linux/Mac script to start the server
-├── web-ide-stop-vscode-server.bat    # Windows script to stop the server
-├── web-ide-stop-vscode-server.sh     # Linux/Mac script to stop the server
-├── web-ide-monitor-vscode-server.bat # Windows script for auto-restart monitoring
-├── web-ide-monitor-vscode-server.sh  # Linux/Mac script for auto-restart monitoring
-├── web-ide-system_info.sh            # Script to display system information
-└── web-ide-update_container.sh       # Script to update the container image
+├── webide-generate-password.bat      # Windows script to generate secure passwords
+├── webide-generate-password.sh       # Linux/Mac script to generate secure passwords
+├── webide-run-server.bat             # Windows script to start the server
+├── webide-run-server.sh              # Linux/Mac script to start the server
+├── webide-stop-server.bat            # Windows script to stop the server
+├── webide-stop-server.sh             # Linux/Mac script to stop the server
+└── webide-system_info.sh             # Script to display system information
 ```
 
 ## Getting Started
@@ -44,16 +43,22 @@ web-ide/
 
 #### Windows
 
-1. Double-click `web-ide-run-vscode-server.bat` to start the server
-2. Access the IDE at https://localhost:8443
-3. Use the password displayed in the terminal (or "PASSWORD" if not changed)
+1. Double-click `webide-generate-password.bat` to generate secure passwords
+2. Double-click `webide-run-server.bat` to start the server
+3. Access the IDE at https://localhost:8443
+4. Use the password displayed when you ran the generate password script
 
 #### Linux/Mac
 
-1. Make the scripts executable: `chmod +x web-ide-*.sh`
-2. Run `./web-ide-run-vscode-server.sh` to start the server
-3. Access the IDE at https://localhost:8443
-4. Use the password displayed in the terminal (or "PASSWORD" if not changed)
+1. Make the scripts executable: `chmod +x webide-*.sh`
+2. Run `./webide-generate-password.sh` to generate secure passwords
+3. Run `./webide-run-server.sh` to start the server
+4. Access the IDE at https://localhost:8443
+5. Use the password displayed when you ran the generate password script
+
+### Workspace Access
+
+The parent directory of this project is mounted as the `/workspace` directory in the container. This means you can access and edit all files in the parent directory through the web IDE.
 
 ### Stopping the Web IDE
 

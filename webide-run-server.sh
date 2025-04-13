@@ -14,12 +14,12 @@ fi
 # Check if the container already exists and stop it properly if it does
 if docker ps -a | grep code-server > /dev/null; then
   echo "Found existing code-server container, stopping it gracefully..."
-  docker compose -f vsc-web-docker-compose.yml down > /dev/null 2>&1
+  docker compose -f webide-docker-compose.yml down > /dev/null 2>&1
 fi
 
 # Start the VS Code web server using Docker Compose
 echo "Starting code-server container..."
-docker compose -f vsc-web-docker-compose.yml up -d
+docker compose -f webide-docker-compose.yml up -d
 
 # Check if container started successfully
 if docker ps | grep code-server > /dev/null; then

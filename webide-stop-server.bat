@@ -6,7 +6,7 @@ docker ps -a | findstr code-server > nul
 if %ERRORLEVEL% == 0 (  echo Found code-server container, stopping it...
   
   REM Stop the container using Docker Compose
-  docker compose -f web-ide-vsc-web-docker-compose.yml down
+  docker compose -f webide-docker-compose.yml down
   
   echo VS Code web server has been stopped.
 ) else (
