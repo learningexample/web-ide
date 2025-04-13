@@ -4,7 +4,7 @@ setlocal EnableDelayedExpansion
 echo Starting VS Code Web Server with automatic restart monitoring...
 
 :start_server
-call run-vscode-server.bat
+call web-ide-run-vscode-server.bat
 
 echo VS Code Web Server monitor active. Will restart server if it stops.
 echo Press CTRL+C to stop monitoring.
