@@ -9,9 +9,8 @@ services:
       - PUID=1000  # User ID
       - PGID=1000  # Group ID      - TZ=Etc/UTC
       - PASSWORD=PASSWORD  # Use environment variable with fallback
-      - SUDO_PASSWORD=${CODE_SERVER_SUDO_PASSWORD:-password}  # Use environment variable with fallback
-    volumes:
-      - ./web-ide/config:/config
+      - SUDO_PASSWORD=${CODE_SERVER_SUDO_PASSWORD:-password}  # Use environment variable with fallback    volumes:
+      - ./code-server-data/config:/config
       - ../:/workspace  # Map parent directory as workspace
     ports:
       - 8443:8443

@@ -1,6 +1,20 @@
 @echo off
+setlocal EnableDelayedExpansion
 echo Starting VS Code Web Server...
- 
+
+REM Check if CODE_SERVER_PASSWORD environment variable is set
+set "GENERATED_PASSWORD="
+if "%CODE_SERVER_PASSWORD%"=="" (
+  REM Generate random password if not set (only numbers and letters)
+  set "CHARS=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+  set "GENERATED_PASSWORD="
+  for /L %%i in (1,1,12) do (
+    set /a rand=!random! %% 62
+    for /F %%j in ("!rand!") do set "GENERATED_PASSWORD=!GENERATED_PASSWORD!!CHARS:~%%j,1!"
+  )
+  set "CODE_SERVER_PASSWORD=!GENERATED_PASSWORD!"
+  echo Generated random password: !GENERATED_PASSWORD!
+)
 
 REM Check if the container already exists and remove it if it does
 docker ps -a | findstr code-server > nul
