@@ -16,11 +16,11 @@ if "%CODE_SERVER_PASSWORD%"=="" (
   echo Generated random password: !GENERATED_PASSWORD!
 )
 
-REM Check if the container already exists and remove it if it does
+REM Check if the container already exists and stop it properly if it does
 docker ps -a | findstr code-server > nul
 if %ERRORLEVEL% == 0 (
-  echo Found existing code-server container, removing it...
-  docker rm -f code-server > nul 2>&1
+  echo Found existing code-server container, stopping it gracefully...
+  docker compose -f vsc-web-docker-compose.yml down > nul 2>&1
 )
 
 REM Start the VS Code web server using Docker Compose
