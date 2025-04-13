@@ -1,0 +1,12 @@
+2025-04-13 18:59:40.411 [info] 
+
+
+
+
+2025-04-13 18:59:40.419 [info] Extension host agent started.
+2025-04-13 18:59:40.432 [info] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+2025-04-13 18:59:40.438 [error] [172.20.0.1][293971d1][ManagementConnection] Unknown reconnection token (never seen).
+2025-04-13 18:59:40.450 [info] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+2025-04-13 18:59:51.018 [info] [172.20.0.1][210828f0][ManagementConnection] New connection established.
+2025-04-13 18:59:51.497 [info] [172.20.0.1][c4b1c5a6][ExtensionHostConnection] New connection established.
+2025-04-13 18:59:51.602 [info] [172.20.0.1][c4b1c5a6][ExtensionHostConnection] <698> Launched Extension Host Process.

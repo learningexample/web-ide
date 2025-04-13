@@ -1,0 +1,55 @@
+[2025-04-13T18:59:27.171Z] info  code-server 4.99.2 e0c960b30e79653332950a285760c5baa1745652
+[2025-04-13T18:59:27.172Z] info  Using user-data-dir /config/data
+[2025-04-13T18:59:27.181Z] info  Using config file /config/.config/code-server/config.yaml
+[2025-04-13T18:59:27.181Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2025-04-13T18:59:27.181Z] info    - Authentication is enabled
+[2025-04-13T18:59:27.181Z] info      - Using password from $PASSWORD
+[2025-04-13T18:59:27.181Z] info    - Not serving HTTPS
+[2025-04-13T18:59:27.181Z] info  Session server listening on /config/data/code-server-ipc.sock
+[18:59:40] 
+
+
+
+
+[18:59:40] Extension host agent started.
+[18:59:40] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+[18:59:40] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+[18:59:51] [172.20.0.1][210828f0][ManagementConnection] New connection established.
+[18:59:51] [172.20.0.1][c4b1c5a6][ExtensionHostConnection] New connection established.
+[18:59:51] [172.20.0.1][c4b1c5a6][ExtensionHostConnection] <698> Launched Extension Host Process.
+[2025-04-13T19:06:44.239Z] info  code-server 4.99.2 e0c960b30e79653332950a285760c5baa1745652
+[2025-04-13T19:06:44.240Z] info  Using user-data-dir /config/data
+[2025-04-13T19:06:44.249Z] info  Using config file /config/.config/code-server/config.yaml
+[2025-04-13T19:06:44.249Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2025-04-13T19:06:44.249Z] info    - Authentication is enabled
+[2025-04-13T19:06:44.249Z] info      - Using password from $PASSWORD
+[2025-04-13T19:06:44.249Z] info    - Not serving HTTPS
+[2025-04-13T19:06:44.249Z] info  Session server listening on /config/data/code-server-ipc.sock
+[19:06:50] 
+
+
+
+
+[19:06:50] Extension host agent started.
+[2025-04-13T19:06:54.656Z] info  code-server 4.99.2 e0c960b30e79653332950a285760c5baa1745652
+[2025-04-13T19:06:54.656Z] info  Using user-data-dir /config/data
+[2025-04-13T19:06:54.664Z] info  Using config file /config/.config/code-server/config.yaml
+[2025-04-13T19:06:54.664Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2025-04-13T19:06:54.665Z] info    - Authentication is enabled
+[2025-04-13T19:06:54.665Z] info      - Using password from $PASSWORD
+[2025-04-13T19:06:54.665Z] info    - Not serving HTTPS
+[2025-04-13T19:06:54.665Z] info  Session server listening on /config/data/code-server-ipc.sock
+[19:06:57] 
+
+
+
+
+[19:06:57] Extension host agent started.
+[19:06:58] [172.20.0.1][79b24875][ManagementConnection] New connection established.
+[19:06:58] [172.20.0.1][5ae68bff][ExtensionHostConnection] New connection established.
+[19:06:58] [172.20.0.1][5ae68bff][ExtensionHostConnection] <641> Launched Extension Host Process.
+[19:07:28] [172.20.0.1][79b24875][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[19:07:28] [172.20.0.1][5ae68bff][ExtensionHostConnection] <641> Extension Host Process exited with code: 0, signal: null.
+[19:07:28] [172.20.0.1][bd7cb898][ManagementConnection] New connection established.
+[19:07:29] [172.20.0.1][6644ccb3][ExtensionHostConnection] New connection established.
+[19:07:29] [172.20.0.1][6644ccb3][ExtensionHostConnection] <1215> Launched Extension Host Process.

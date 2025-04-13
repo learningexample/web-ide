@@ -1,0 +1,8 @@
+2025-04-13 19:06:50.271 [info] 
+
+
+
+
+2025-04-13 19:06:50.277 [info] Extension host agent started.
+2025-04-13 19:06:50.293 [error] [172.20.0.1][5322fe50][ExtensionHostConnection] Unknown reconnection token (never seen).
+2025-04-13 19:06:50.337 [error] [172.20.0.1][ef14eacd][ManagementConnection] Unknown reconnection token (never seen).

@@ -1,0 +1,3 @@
+2025-04-13 19:07:29.725 [info] Log level: Info
+2025-04-13 19:07:42.503 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2025-04-13 19:07:42.656 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for learningexample/web-ide: Error: No GitHub authentication session available.
